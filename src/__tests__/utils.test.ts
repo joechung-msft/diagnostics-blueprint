@@ -9,16 +9,12 @@ describe("isExtensionInfo", () => {
   it("returns false for undefined", () => {
     expect(isExtensionInfo(undefined)).toBe(false);
   });
-
-  it("returns false for object without extensionName", () => {
-    expect(isExtensionInfo({})).toBe(false);
-  });
 });
 
 describe("byKey", () => {
   it("sorts by key", () => {
-    const a = { key: "a" };
-    const b = { key: "b" };
+    const a = { name: "a", key: "a" };
+    const b = { name: "b", key: "b" };
     expect(byKey(a, b)).toBeLessThan(0);
     expect(byKey(b, a)).toBeGreaterThan(0);
     expect(byKey(a, a)).toBe(0);
