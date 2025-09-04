@@ -8,6 +8,7 @@ export default defineConfig({
     coverage: {
       exclude: [
         "*.config.{js,ts}",
+        "dist",
         "src/main.tsx",
         "src/reportWebVitals.ts",
         "src/**/*.d.ts",
