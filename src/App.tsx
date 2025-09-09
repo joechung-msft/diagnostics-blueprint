@@ -124,12 +124,12 @@ const App: React.FC = () => {
         size="large"
         onChange={(tabId) => setSelectedTab(tabId as string)}
       >
-        <Tab id="extensions" title="Extensions" />
-        <Tab id="build" title="Build Information" />
-        <Tab id="server" title="Server Information" />
+        <Tab aria-controls="extensions-tab" title="Extensions" />
+        <Tab aria-controls="build-tab" title="Build Information" />
+        <Tab aria-controls="server-tab" title="Server Information" />
       </Tabs>
       {selectedTab === "extensions" && (
-        <div className="tab-panel">
+        <div id="extensions-tab" className="tab-panel">
           <div className="stack">
             <Extensions extensions={extensions} onLinkClick={handleLinkClick} />
             {extension && <Extension {...extension} />}
@@ -137,12 +137,12 @@ const App: React.FC = () => {
         </div>
       )}
       {selectedTab === "build" && (
-        <div className="tab-panel">
+        <div id="build-tab" className="tab-panel">
           <BuildInfo {...buildInfo} />
         </div>
       )}
       {selectedTab === "server" && (
-        <div className="tab-panel">
+        <div id="server-tab" className="tab-panel">
           <ServerInfo {...serverInfo} />
         </div>
       )}

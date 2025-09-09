@@ -24,7 +24,7 @@ const Extensions: React.FC<ExtensionsProps> = ({ extensions, onLinkClick }) => {
         }}
       >
         {links.map((link) => (
-          <Tab key={link.key} id={link.key} title={link.name} />
+          <Tab aria-controls="extension" key={link.key} title={link.name} />
         ))}
       </Tabs>
     </div>

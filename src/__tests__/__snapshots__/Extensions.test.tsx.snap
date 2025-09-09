@@ -14,22 +14,21 @@ exports[`Extensions > matches snapshot 1`] = `
       >
         <div
           class="bp6-tab-indicator-wrapper"
-          style="height: 0px; transform: translateX(0px) translateY(0px); width: 0px; transition: none;"
+          style="display: none;"
         >
           <div
             class="bp6-tab-indicator"
           />
         </div>
         <div
-          aria-controls="bp6-tab-panel_undefined_SampleExtension"
+          aria-controls="bp6-tab-panel_undefined_undefined"
           aria-disabled="false"
-          aria-expanded="true"
-          aria-selected="true"
+          aria-expanded="false"
+          aria-selected="false"
           class="bp6-tab"
-          data-tab-id="SampleExtension"
-          id="bp6-tab-title_undefined_SampleExtension"
+          id="bp6-tab-title_undefined_undefined"
           role="tab"
-          tabindex="0"
+          tabindex="-1"
         >
           SampleExtension
         </div>
